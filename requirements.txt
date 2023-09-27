@@ -1,0 +1,4 @@
+cogeo-mosaic
+geopandas
+leafmap
+matplotlib
