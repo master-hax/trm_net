@@ -42,7 +42,8 @@ def download_maxar(collection_name,data_dir):
             assets=['visual'])
         images = gdf['visual'].tolist()
         download_dir = join(data_dir,(collection_name))
-        leafmap.maxar_download(images, out_dir=download_dir)
+        print("reached")
+        # leafmap.maxar_download(images, out_dir=download_dir)
 
     print("Download completed!")
 
