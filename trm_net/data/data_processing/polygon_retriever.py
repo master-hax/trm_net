@@ -68,8 +68,9 @@ def get_image(collection_name, data_dir):
         if not isdir(out_dir):
             mkdir(out_dir)
         
-        np.savez(out_file_name, output_name=output_name, url_data=url_data, allow_pickle=True)
-
+        # save the output_name and url_data to a npz file allowing pickle so we can use url_data as input to download the image
+        np.savez(out_file_name, output_name=output_name, url_data=url_data)
+        
 
 
         # test if it works by retrieving output_name and url_data from the npz file
